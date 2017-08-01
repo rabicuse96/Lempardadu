@@ -1,0 +1,25 @@
+import  random
+
+number1 = random.randint(1, 6)
+number2 = random.randint(1, 6)
+count =0
+count1 =0
+count2 = 0
+while count < 3:
+    var1 = input("Tekan 1 untuk melempar  dadu(Player 1) ")
+    if var1 == 1:
+        count1 +=number1
+    var2 = input("Tekan 2 untuk melempar dadu(Player 2) ")
+    if var2 == 2:
+        count2 +=number2
+        count +=1
+
+print ("Jumlah dadu dari Player 1 %d"%count1)
+print ("Jumlah dadu dari Player 2 %d"% count2)
+
+if count1 > count2:
+    print ("Player 1 wins")
+elif count1 < count2:
+    print ("Player 2 wins")
+else:
+    print ("tie")
